@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
@@ -11,13 +12,16 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="./">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Login</a>
+          <Link className="nav-link" href="login/">Login</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
+          <Link className="nav-link" href="about/">About</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" href="mytodos/">My Todos</Link>
         </li>
         
       </ul>
